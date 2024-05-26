@@ -1,0 +1,68 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/env0/Queue",
+      "sourceOp": "push",
+      "target": "root/env0/Queue/Consumer0",
+      "targetOp": "invoke",
+      "name": "setConsumer()"
+    },
+    {
+      "source": "root/env0/Queue/Consumer0",
+      "sourceOp": "invoke",
+      "target": "root/env0/Bucket",
+      "targetOp": "put",
+      "name": "put"
+    },
+    {
+      "source": "root/env0/Queue/Consumer0",
+      "sourceOp": "invoke",
+      "target": "root/env0/Counter",
+      "targetOp": "inc",
+      "name": "inc"
+    },
+    {
+      "source": "root/env0/Queue/Consumer0",
+      "sourceOp": "invokeAsync",
+      "target": "root/env0/Bucket",
+      "targetOp": "put",
+      "name": "put"
+    },
+    {
+      "source": "root/env0/Queue/Consumer0",
+      "sourceOp": "invokeAsync",
+      "target": "root/env0/Counter",
+      "targetOp": "inc",
+      "name": "inc"
+    },
+    {
+      "source": "root/env0/Counter",
+      "sourceOp": "inc",
+      "target": "root/env0/Counter/Resource",
+      "targetOp": "call",
+      "name": "call"
+    },
+    {
+      "source": "root/env0/Counter",
+      "sourceOp": "dec",
+      "target": "root/env0/Counter/Resource",
+      "targetOp": "call",
+      "name": "call"
+    },
+    {
+      "source": "root/env0/Counter",
+      "sourceOp": "peek",
+      "target": "root/env0/Counter/Resource",
+      "targetOp": "call",
+      "name": "call"
+    },
+    {
+      "source": "root/env0/Counter",
+      "sourceOp": "set",
+      "target": "root/env0/Counter/Resource",
+      "targetOp": "call",
+      "name": "call"
+    }
+  ]
+}

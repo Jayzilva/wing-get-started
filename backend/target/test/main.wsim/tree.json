@@ -1,0 +1,162 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "root",
+    "path": "root",
+    "children": {
+      "cloud.TestRunner": {
+        "id": "cloud.TestRunner",
+        "path": "root/cloud.TestRunner",
+        "constructInfo": {
+          "fqn": "@winglang/sdk.std.TestRunner",
+          "version": "0.0.0"
+        },
+        "display": {
+          "title": "TestRunner",
+          "description": "A suite of APIs for running tests and collecting results.",
+          "hidden": true
+        }
+      },
+      "env0": {
+        "id": "env0",
+        "path": "root/env0",
+        "children": {
+          "Queue": {
+            "id": "Queue",
+            "path": "root/env0/Queue",
+            "children": {
+              "Policy": {
+                "id": "Policy",
+                "path": "root/env0/Queue/Policy",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.sim.Policy",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "Policy",
+                  "description": "A simulated resource policy",
+                  "hidden": true
+                }
+              },
+              "Consumer0": {
+                "id": "Consumer0",
+                "path": "root/env0/Queue/Consumer0",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.cloud.Function",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "setConsumer()",
+                  "description": "A cloud function (FaaS)",
+                  "sourceModule": "@winglang/sdk"
+                }
+              },
+              "QueueEventMapping0": {
+                "id": "QueueEventMapping0",
+                "path": "root/env0/Queue/QueueEventMapping0",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.std.Resource",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "hidden": true
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@winglang/sdk.cloud.Queue",
+              "version": "0.0.0"
+            },
+            "display": {
+              "title": "Queue",
+              "description": "A distributed message queue"
+            }
+          },
+          "Bucket": {
+            "id": "Bucket",
+            "path": "root/env0/Bucket",
+            "children": {
+              "Policy": {
+                "id": "Policy",
+                "path": "root/env0/Bucket/Policy",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.sim.Policy",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "Policy",
+                  "description": "A simulated resource policy",
+                  "hidden": true
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@winglang/sdk.cloud.Bucket",
+              "version": "0.0.0"
+            },
+            "display": {
+              "title": "Bucket",
+              "description": "A cloud object store"
+            }
+          },
+          "Counter": {
+            "id": "Counter",
+            "path": "root/env0/Counter",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "root/env0/Counter/Resource",
+                "constructInfo": {
+                  "fqn": "@winglang/sdk.sim.Resource",
+                  "version": "0.0.0"
+                },
+                "display": {
+                  "title": "Resource",
+                  "description": "A simulated resource",
+                  "hidden": true,
+                  "color": "emerald"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "@winglang/sdk.cloud.Counter",
+              "version": "0.0.0"
+            },
+            "display": {
+              "title": "Counter",
+              "description": "A distributed atomic counter"
+            }
+          },
+          "$Closure1_0": {
+            "id": "$Closure1_0",
+            "path": "root/env0/$Closure1_0",
+            "constructInfo": {
+              "fqn": "@winglang/sdk.std.AutoIdResource",
+              "version": "0.0.0"
+            },
+            "display": {
+              "hidden": true
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "@winglang/sdk.std.Resource",
+          "version": "0.0.0"
+        },
+        "display": {}
+      },
+      "ParameterRegistrar": {
+        "id": "ParameterRegistrar",
+        "path": "root/ParameterRegistrar",
+        "constructInfo": {
+          "fqn": "@winglang/sdk.platform.ParameterRegistrar",
+          "version": "0.0.0"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "@winglang/sdk.core.App",
+      "version": "0.0.0"
+    }
+  }
+}
